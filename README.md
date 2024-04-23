@@ -19,6 +19,7 @@ pip install haversine
 > 변경 1) rospy.Subscriber("/gps/fix", NavSatFix, self.fix_callback)
 
   ![Screenshot from 2024-04-24 04-40-19](https://github.com/donghyunkim39/distance-meter-using-GPS/assets/163104650/4d2cc303-f1af-4cb6-b5b5-58618d7cd939)
+ 
  필자의 경우 위도, 경도가 담긴 topic의 경우 /gps/fix 이고, 이토픽의 Type은 NavSatFix 이므로 위 위같이 설정함
 
 > 변경 2) self.file_path = "/home/donghyun/gps_point.txt"
@@ -38,6 +39,7 @@ pip install haversine
 
 
 ![스크린샷 2024-04-24 045620](https://github.com/donghyunkim39/distance-meter-using-GPS/assets/163104650/3031e1a7-63c7-4351-ac04-fe45881230d4)
+
  >2) Google earth로 본 거리: 51.95m
 
 즉, rosbag record당시 RTK(고정밀GNSS)의 오차까지 생각한다면 오차가 거의 없음을 알수있다.
